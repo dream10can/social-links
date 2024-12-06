@@ -6,7 +6,13 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({ origin: process.env.CLEINT_URL, credentials: true }));
+app.use(
+  cors({
+    origin: process.env.CLEINT_URL,
+    methods: ["POST", "GET", "PUT"],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 
