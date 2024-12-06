@@ -18,6 +18,6 @@ app.use("/api/auth", require("./routes/auth"));
 
 app.use("/api/profileInfo", require("./routes/user"));
 
-app.listen(3000, () => {
+app.listen(5000, () => {
   console.log("server Start");
 });
