@@ -16,7 +16,7 @@ function App() {
       element: <HeaderSection />,
 
       children: [
-        { path: "/social-links", element: <Home /> },
+        { path: "/", element: <Home /> },
         { path: "/login", element: <Login /> },
         { path: "/register", element: <Register /> },
         { path: "*", element: <NotFound /> },
