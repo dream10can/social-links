@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.CLEINT_URL,
+    origin: "https://social-links-nu-flame.vercel.app",
     methods: ["POST", "GET", "PUT"],
     credentials: true,
   })
