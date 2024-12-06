@@ -15,7 +15,7 @@ function Login() {
   const { mutate, data, isError, isPending } = useMutation({
     mutationFn: async (newUser) => {
       const response = await fetch(
-        "https://dream10can.github.io/social-links/api/auth/login",
+        "https://social-links-nu-flame.vercel.app/api/auth/login",
         {
           method: "POST",
           credentials: "include",

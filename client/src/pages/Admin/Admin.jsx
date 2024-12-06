@@ -31,10 +31,13 @@ function Admin() {
   const { data: userData, isLoading } = useQuery({
     queryKey: ["userData"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:3000/api/profileInfo", {
-        method: "GET",
-        credentials: "include",
-      });
+      const response = await fetch(
+        "https://social-links-nu-flame.vercel.app/api/profileInfo",
+        {
+          method: "GET",
+          credentials: "include",
+        }
+      );
 
       const data = await response.json();
 
