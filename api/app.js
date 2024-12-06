@@ -9,7 +9,7 @@ const app = express();
 app.use(
   cors({
     origin: "https://social-links-nu-flame.vercel.app",
-    methods: ["POST", "GET", "PUT"],
+    // methods: ["POST", "GET", "PUT"],
     credentials: true,
   })
 );
