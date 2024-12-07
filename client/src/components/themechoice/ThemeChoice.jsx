@@ -9,7 +9,7 @@ function ThemeChoice({ image, name }) {
   const { mutate: updateTheme, isPending } = useMutation({
     mutationFn: async (updateData) => {
       const response = await fetch(
-        "http://localhost:3000/api/profileInfo/updateTheme",
+        "https://social-links-api.vercel.app/api/profileInfo/updateTheme",
         {
           method: "PUT",
           body: JSON.stringify(updateData),
