@@ -87,7 +87,7 @@ function UserName() {
       <p
         className={`absolute top-40 ${
           userData?.profile?.theme === "ثيم كوفي" ? "text-black" : "text-white"
-        } left-0 right-0 text-center p-2 md: mt-8 md:text-xl lg:text-2xl lg:mt-12`}
+        } left-0 right-0 text-center p-2 md: mt-5 md:text-xl lg:text-2xl lg:mt-12`}
       >
         {userData?.profile?.bio}
       </p>{" "}
