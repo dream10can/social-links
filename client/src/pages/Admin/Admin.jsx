@@ -32,7 +32,7 @@ function Admin() {
     queryKey: ["userData"],
     queryFn: async () => {
       const response = await fetch(
-        "https://social-links-nu-flame.vercel.app/api/profileInfo",
+        "https://social-links-api.vercel.app/api/profileInfo",
         {
           method: "GET",
           credentials: "include",
@@ -51,12 +51,15 @@ function Admin() {
     isPending: isPendingUpdate,
   } = useMutation({
     mutationFn: async (updateData) => {
-      const response = await fetch("http://localhost:3000/api/profileInfo", {
-        method: "PUT",
-        body: JSON.stringify(updateData),
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-      });
+      const response = await fetch(
+        "https://social-links-api.vercel.app/api/profileInfo",
+        {
+          method: "PUT",
+          body: JSON.stringify(updateData),
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+        }
+      );
 
       const data = await response.json();
 
@@ -79,10 +82,13 @@ function Admin() {
 
   const { mutate: logOut, isPending: isPendingLogOut } = useMutation({
     mutationFn: async () => {
-      const response = await fetch("http://localhost:3000/api/auth/logout", {
-        method: "POST",
-        credentials: "include",
-      });
+      const response = await fetch(
+        "https://social-links-api.vercel.app/api/auth/logout",
+        {
+          method: "POST",
+          credentials: "include",
+        }
+      );
 
       const data = await response.json();
 
@@ -105,12 +111,15 @@ function Admin() {
 
   const { mutate: createLinks, isPending: isPendingLinks } = useMutation({
     mutationFn: async (createData) => {
-      const response = await fetch("http://localhost:3000/api/urlInfo", {
-        method: "POST",
-        body: JSON.stringify(createData),
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-      });
+      const response = await fetch(
+        "https://social-links-api.vercel.app/api/urlInfo",
+        {
+          method: "POST",
+          body: JSON.stringify(createData),
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+        }
+      );
       const data = await response.json();
       return data;
     },

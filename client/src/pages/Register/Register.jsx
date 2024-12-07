@@ -14,11 +14,14 @@ function Register() {
 
   const { mutate, data, isError, isPending } = useMutation({
     mutationFn: async (newUser) => {
-      const response = await fetch("http://localhost:3000/api/auth/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newUser),
-      });
+      const response = await fetch(
+        "https://social-links-api.vercel.app/api/auth/register",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(newUser),
+        }
+      );
 
       const data = await response.json();
 

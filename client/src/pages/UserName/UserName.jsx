@@ -13,7 +13,7 @@ function UserName() {
     queryKey: ["userDataTheme", userNameId],
     queryFn: async () => {
       const response = await fetch(
-        `http://localhost:3000/api/profileInfo/${userNameId}`,
+        `https://social-links-api.vercel.app/api/profileInfo/${userNameId}`,
         {
           method: "GET",
         }
@@ -29,7 +29,7 @@ function UserName() {
     queryKey: ["linksData", userNameId],
     queryFn: async () => {
       const response = await fetch(
-        `http://localhost:3000/api/urlInfo/${userNameId}`,
+        `https://social-links-api.vercel.app/api/urlInfo/${userNameId}`,
         {
           method: "GET",
         }
