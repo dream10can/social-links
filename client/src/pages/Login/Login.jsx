@@ -63,7 +63,7 @@ function Login() {
               type="text"
               placeholder="أكتب أسم المستخدم"
               name="userName"
-              className="w-8  p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
+              className="w-[290px] p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
               required={true}
               ref={userName}
             />
@@ -71,7 +71,7 @@ function Login() {
             <input
               type="password"
               placeholder="أكتب رقمك السري"
-              className="w-8 p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
+              className="w-[290px] p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
               name="password"
               required={true}
               ref={password}
