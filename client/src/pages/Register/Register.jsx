@@ -47,7 +47,7 @@ function Register() {
   return (
     <>
       <section>
-        <div className="max-w-md md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-full">
+        <div className="max-w-[320px] md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-full">
           <div className=" text-center mt-24">
             <h1 className="text-2xl md:text-[26px] font-semibold">
               نورتنا في منصة social Links
