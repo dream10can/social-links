@@ -59,7 +59,7 @@ function UserName() {
             ? playerTheme
             : userData?.profile?.theme === "ثيم كوفي"
             ? coffeeTheme
-            : ""
+            : skystars
         }
         alt="theme pic"
         className={`${
@@ -71,7 +71,11 @@ function UserName() {
       />{" "}
       <div className="w-20 h-20 md:w-32 md:h-32  rounded-full mt-5 shadow-lg absolute top-0 left-0 right-0 m-auto">
         <img
-          src={userData?.profile?.profilePic}
+          src={
+            !userData?.profile?.profilePic
+              ? coffeeTheme
+              : userData?.profile?.profilePic
+          }
           alt={"profile pic"}
           className="rounded-full  w-20 h-20 object-cover md:w-32 md:h-32"
           loading="lazy"
