@@ -50,7 +50,7 @@ function Login() {
   return (
     <>
       <section>
-        <div className=" max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-full p-8 ">
+        <div className=" max-w-xs md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-full p-2 ">
           <div className=" text-center mt-24">
             <h1 className="text-2xl font-semibold md:text-[26px] ">اهلا فيك</h1>
           </div>
@@ -63,7 +63,7 @@ function Login() {
               type="text"
               placeholder="أكتب أسم المستخدم"
               name="userName"
-              className="p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
+              className="w-8  p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
               required={true}
               ref={userName}
             />
@@ -71,7 +71,7 @@ function Login() {
             <input
               type="password"
               placeholder="أكتب رقمك السري"
-              className="p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
+              className="w-8 p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
               name="password"
               required={true}
               ref={password}
