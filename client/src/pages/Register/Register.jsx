@@ -62,21 +62,21 @@ function Register() {
               type="text"
               placeholder="أكتب أسم المستخدم"
               name="userName"
-              className="p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
+              className="w-[290px] p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
               ref={userName}
             />
             <input
               type="email"
               placeholder="أكتب أميلك"
               name="email"
-              className="p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
+              className="w-[290px] p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
               ref={email}
             />
 
             <input
               type="password"
               placeholder="أكتب رقمك السري"
-              className="p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
+              className="w-[290px] p-2 text-sm placeholder:text-xs rounded border-gray-200 outline-none border-[1px] focus:border-gray-900 lg:w-[350px]"
               name="password"
               ref={password}
             />
