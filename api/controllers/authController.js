@@ -111,6 +111,7 @@ const login = async (req, res) => {
         httpOnly: true,
         secure: true,
         // sameSite: "none",
+        sameSite: "Strict",
         maxAge: expireDate,
       })
       .status(200)
