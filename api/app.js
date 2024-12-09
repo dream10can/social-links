@@ -8,10 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "https://social-links-nu-flame.vercel.app",
-      "https://social-links-api.vercel.app",
-    ],
+    origin: ["https://social-links-nu-flame.vercel.app"],
     methods: ["POST", "GET", "PUT"],
     credentials: true,
   })
